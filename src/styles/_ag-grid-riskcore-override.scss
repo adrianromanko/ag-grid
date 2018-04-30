@@ -1,0 +1,151 @@
+.ag-grid-control {
+    font-size: 11px;
+    
+    .ag-cell,
+    .ag-header-cell {
+        line-height: 25px;
+    }
+
+    .ag-cell-inline-editing {
+        height: 25px;
+        overflow: visible;
+        select {
+            height: 100%;
+        }
+    }
+
+    .ag-header-cell-menu-button .ag-icon-menu {
+        height: 25px;
+    }
+
+    .ag-floating-filter-button {
+        margin-top: 5px;
+    }
+
+    .ag-header-group-cell::after,
+    .ag-header-cell::after,
+    .ag-header-cell-resize::after {
+        height: 9px;
+        margin-top: 6px;
+    }
+
+    input[type="date"], input[type="time"], input[type="datetime-local"], input[type="month"] {
+        -webkit-appearance: textfield;
+    }
+    input, select,
+    .ag-header-cell-text {
+        font-size: 11px;
+    }
+    
+
+    /* form control */
+    .typeahead-control {
+        position: relative;
+        padding-left: 4px;
+        padding-right: 2px;
+
+        .form-control {
+            font-size: 11px;
+            background-image: none;
+            background-color: transparent;
+        }
+    }
+    .form-control-wrapper .form-control {
+        height: 23px;
+    }
+
+    /* cell neg / pos values css */
+    .ag-cell-neg {
+        color: $ag-grid-cell-negative;
+        text-align: right;
+    }
+    .ag-cell-pos {
+        color: $ag-grid-cell-positive;
+        text-align: right;
+    }
+    .ag-cell-has-error {
+        border: 1px solid $ag-cell-has-error-border-color;
+    }
+
+    /* row status css class */
+    .ag-row-updated {
+        background-color: $ag-row-updated-background-color;
+    }
+    .ag-row-created {
+        background-color: $ag-row-created-background-color;
+    }
+    .ag-row-deleted {
+        background-color: $ag-row-deleted-background-color;
+    }
+    .ag-row-invalid {
+        background-color: $ag-row-invalid-background-color;
+    }
+
+    /* To visisble Typeahead list on ag-header */
+    .ag-header-group-cell.typeahead-container {
+        overflow: visible;
+    }
+    .ag-header, .ag-header-viewport {
+        overflow: visible;
+    }
+    /* Date picker - date.editor.framwork - inline cell edit */
+    .ag-cell-editor-date {
+        .multi-datepicker-control { 
+            padding: 0px; 
+        }
+    }
+
+    /* Toolpanel side button */
+    .ag-tool-panel .ag-side-buttons button {
+        padding: 0px 5px;
+    }
+
+    .ag-bl-normal-east {
+        float: right;
+        height: 100%;
+
+       border-top: none;
+        border-left: none; 
+    }
+
+    .ag-theme-balham .ag-column-panel, .ag-grid-control .ag-column-panel {
+        border-right: none;
+        border-left: 1px;
+    }
+
+    .ag-tool-panel {
+        border-right: none;
+    }
+
+    .ag-header-viewport, .ag-grid-control .ag-header {
+        overflow: visible;
+        border-top: 0.5px;
+    }
+
+    .ag-root {
+        border: none;
+        border-top: 1px solid $ag-root-border-color;
+    }
+
+    .ag-column-panel {
+        border-right: 0;
+        border-left: 1px solid $ag-root-border-color;
+        background-color: $ag-column-panel-bg-color;
+    }
+
+    [ref="north"] .ag-column-drop {
+        border: none;
+    }
+
+    .ag-tool-panel .ag-side-buttons button {
+        border-right: 1px solid $ag-root-border-color;
+        border-bottom: 0;
+    }
+
+    .ag-tool-panel .ag-side-buttons {
+        background-color: $ag-tool-panel-bg-color;
+        border-left: 1px solid $ag-root-border-color;
+        border-bottom: 0;
+    }
+
+}

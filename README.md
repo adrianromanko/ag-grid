@@ -1,3 +1,4 @@
+[![Build Status](https://travis-ci.org/adrianromanko/ag-grid.svg?branch=master)](https://travis-ci.org/adrianromanko/ag-grid)
 
 ag-Grid
 ==============
